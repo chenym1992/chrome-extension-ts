@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 import { crx } from '@crxjs/vite-plugin';
@@ -16,6 +16,11 @@ export default defineConfig({
       input: {
         panel: resolve(__dirname, "src/devtools/panel.html"),
       },
+    },
+  },
+  resolve: {
+    alias: {
+      "@": path.join(__dirname, "src"),
     },
   },
   optimizeDeps: {

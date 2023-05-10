@@ -1,7 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./panel.css";
-import App from "./PanelApp";
+import './panel.css';
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './PanelApp';
 
 console.log("panel abc");
 

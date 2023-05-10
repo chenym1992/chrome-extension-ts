@@ -38,7 +38,8 @@ export default defineManifest({
   short_name: "__MSG_appName__",
   devtools_page: "src/devtools/devtools.html",
   content_security_policy: {
-    extension_pages: "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'",
+    extension_pages:
+      "script-src 'self' 'wasm-unsafe-eval' http://localhost; object-src 'self';",
   },
   minimum_chrome_version: "88",
 });
